@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>All Mail - "Back in my day" mail</title>
+        <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/2/26/Electronic.mail.png">
+        <style>
+            html
+            {
+                background-color: #e4e4e4;
+            }
+            hr
+            {
+                background-color: black;
+            }
+            #header
+            {
+                font-size: 50px;
+            }
+            #headerimg
+            {
+                height: 70px;
+                width: 70px;
+                float: left;
+            }
+            .linked
+            {
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #linkinbox
+            {
+                color: black;
+            }
+            #linkinbox:hover
+            {
+                color: blue;
+            }
+            #linkall
+            {
+                color: blue;
+            }
+            #linkall:hover
+            {
+                color: blue;
+            }
+            #linkspam
+            {
+                color: black;
+            }
+            #linkspam:hover
+            {
+                color: blue;
+            }
+            #linkdeleted
+            {
+                color: black;
+            }
+            #linkdeleted:hover
+            {
+                color: blue;
+            }
+            .emailimg
+            {
+                width: 40px;
+                height: 25px;
+                float: left;
+            }
+            blink 
+            {
+                animation: 1s linear infinite condemned_blink_effect;
+            }
+            @keyframes condemned_blink_effect
+            {
+            0% 
+            {
+                visibility: hidden;
+            }
+            50% 
+            {
+            visibility: hidden;
+            }
+            100% 
+            {
+            visibility: visible;
+            }
+            }
+            #advert
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #mail
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 95%;
+            }
+            #text
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                width: 94%
+            }
+        </style>
+    </head>
+    <body>
+        <div id="headerdiv">
+
+        </div>
+        <a href="inbox.html" style="color: black;"><img id="headerimg" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Electronic.mail.png"></a>
+        <a href="inbox.html" style="color: black;"><b><h1 id="header">"Back in my day" mail</h1></b><h4>v. 0.1.2 (dev)</h4></a>
+        <hr>
+        <h3 style="float: left;">One letter from your friend in the middle colonies</h3>
+        <b><marquee id="advert" direction="left" scrollamount="10" style="border: 3px solid #ecb802; color: black;"><p style="float: left; position: relative; margin-top: 0px; height: 0;"><blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>&#160;&#160;&#160;</p>Loading...&#160;&#160;&#160;<blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink></marquee></b>
+        <hr>
+        <a href="inbox.html" id="linkinbox" class="linked">Inbox</a>
+        &#160;&#160;&#160;&#160;&#160;
+        <a href="all.html" id="linkall" class="linked">All Mail</a>
+        &#160;&#160;&#160;&#160;&#160;
+        <a href="spam.html" id="linkspam" class="linked">Ads/Spam</a>
+        &#160;&#160;&#160;&#160;&#160;
+        <a href="deleted.html" id="linkdeleted" class="linked">Deleted</a>
+        <hr>
+        <img class="emailimg" src="mail.png">
+        <a id="mail" href="mail1.html"><h3 id="text" style="float: left; position: relative; margin-top: -2px; border: 3px solid;"><i>Friend &#160;&#160;|</i><b>&#160;&#160;&#160;I heard about something</b>&#160;&#160;&#160;|&#160;&#160;&#160;So from what I have been told that your family is religous and that is fine but y'all live in the New Engla...</h3></a>
+        <br><br><br>
+        <img class="emailimg" src="mail.png">
+        <a id="mail" href="mail2.html"><h3 id="text" style="float: left; position: relative; margin-top: -2px; border: 3px solid;"><i style="background-color: red; color: white; border-radius: 10px;">&#160;&#160;Known Spammer&#160;&#160;</i>&#160;&#160;<i style="background-color: red; color: white; border-radius: 10px;">&#160;&#160;Deleted&#160;&#160;</i><b>&#160;HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH...</b>&#160;&#160;&#160;HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA</h3></a>
+    </body>
+    <script>
+        random = Math.floor(Math.random() * 3)
+        console.log(random)
+        if(random == 0)
+        {
+            document.getElementById("advert").innerHTML = '<p style="float: left; position: relative; margin-top: 0px; height: 0;"><blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>&#160;&#160;&#160;</p>' + "Come to Georgia! Best crops, best weather best whatever you can think of! Come see for yourself (we are not responsible of any injuries or any other medical issues while you are traveling)" + '&#160;&#160;&#160;<blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>'
+        }
+        else if(random == 1)
+        {
+            document.getElementById("advert").innerHTML = '<p style="float: left; position: relative; margin-top: 0px; height: 0;"><blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>&#160;&#160;&#160;</p>' + "We will not stand for religous limitations! We will abolish these rules and let you practice your religion as much as you want! Head over to the middle colonies to start today!" + '&#160;&#160;&#160;<blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>'
+        }
+        else
+        {
+            document.getElementById("advert").innerHTML = '<p style="float: left; position: relative; margin-top: 0px; height: 0;"><blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>&#160;&#160;&#160;</p>' + "Your advertisement could be here! Contact backinmydayads@bimy.old to see if yours could be here!"  + '&#160;&#160;&#160;<blink style="background-color: #ecb802; color: white; border-radius: 10px;">&#160;&#160;ADVERTISEMENT&#160;&#160;</blink>'
+        }
+    </script>
+</html>
